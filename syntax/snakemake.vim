@@ -1,7 +1,8 @@
 " Vim syntax file
 " Language:	Snakemake (extended from python.vim)
 " Maintainer:	Jay Hesselberth (jay.hesselberth@gmail.com)
-" Last Change:	2016 Jan 23
+" Modified By:	Liang-Bo Wang (me@liang2.tw)
+" Last Change:	2017 Jul 05
 "
 " Usage
 "
@@ -16,6 +17,9 @@
 "
 " :set syntax=snakemake
 "
+if exists("b:current_syntax")
+  finish
+endif
 
 " load settings from system python.vim (7.4)
 source $VIMRUNTIME/syntax/python.vim
