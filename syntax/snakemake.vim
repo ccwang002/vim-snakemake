@@ -2,7 +2,7 @@
 " Language:	Snakemake (extended from python.vim)
 " Maintainer:	Jay Hesselberth (jay.hesselberth@gmail.com)
 " Modified By:	Liang-Bo Wang (me@liang2.tw)
-" Last Change:	2017 Jul 05
+" Last Change:	2019 Feb 05
 "
 " Usage
 "
@@ -55,7 +55,7 @@ syn keyword pythonStatement	rule subworkflow nextgroup=pythonFunction skipwhite
 " similar to special def and class treatment from python.vim, except
 " parenthetical part of def and class
 syn match   pythonFunction
-      \ "\%(\%(rule\s\|subworkflow\s\)\s*\)\@<=\h*" contained
+      \ "\%(\%(rule\s\|subworkflow\s\)\s*\)\@<=\h\w*" contained
 
 syn sync match pythonSync grouphere NONE "^\s*\%(rule\|subworkflow\)\s\+\h\w*\s*"
 
